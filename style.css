@@ -1,60 +1,147 @@
-/* this is some magical font-importing.  
+/* this is some magical font-importing.
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
   margin: 0;
-  background: #eee;
-  font-family: Besley, serif;
+  font-family: roboto, sans-serif;
+}
+
+.header,.hero,.info,.quote,.action_call,.footer {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.header,.hero,.footer {
+  background: #1F2937;
+  color: #F9FAF8;
+}
+
+.hero_secondary,.info_text,.header_links a {
+  font-size: 18px;
+  color: lightgray;
+  text-decoration: none;
+  /* padding: 8px; */
+}
+
+.button, .action_call{
+  background: #3882F6;
 }
 
 .header {
-  background: white;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  font-size: 24px;
   display: flex;
   align-content: center;
   justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header_links {
+
+}
+
+.hero{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 20px;
+}
+
+.hero_left{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero_main {
+  font-weight: bolder;
+  font-size: 48px;
+}
+
+.hero_secondary{
+
+}
+
+.button{
+  border-radius: 8px;
+  width: 100px;
+  height: 30px;
+  /* padding: 10px 0px; */
+  text-align: center;
+}
+
+.hero_image{
+  background: gray;
+  text-align: center;
+  width: 900px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.info_header {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: bolder;
+  padding: 8px;
+  text-align: center;
+}
+
+.info_tiles {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.info_tile {
+  width: 150px;
+  gap: 8px;
+}
+
+.info_box {
+  border: 2px solid #3882F6;
+  border-radius: 8px;
+  height: 150px;
+}
+
+.info_text {
+  text-align: center;
+}
+
+.quote {
+  background: #E5E7EB;
+  color: #1F2937;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   padding: 8px;
 }
 
-.left, .right {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-}
-
-.logo {
-  color: rebeccapurple;
-  font-size: 32px;
-  font-weight: 900;
+.quote_main {
+  font-size: 36px;
   font-style: italic;
+  font-weight: light;
 }
 
-button {
-  border: none;
-  border-radius: 8px;
-  background: rebeccapurple;
-  color: white;
-  padding: 8px 24px;
+.quote_author {
+  font-weight: bold;
+  font-size: 24px;
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
-}
+.action_call {
 
-ul {
-  list-style-type: none;
-  display: flex;
-  gap: 16px;
 }
