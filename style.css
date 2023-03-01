@@ -7,29 +7,32 @@ body {
   font-family: roboto, sans-serif;
 }
 
-.header,.hero,.info,.quote,.action_call,.footer {
+.header,.hero,.info,.quote,.action,.footer {
   padding-left: 200px;
   padding-right: 200px;
 }
 
 .header,.hero,.footer {
   background: #1F2937;
+}
+
+.header_logo, .hero_main, .hero_image {
   color: #F9FAF8;
 }
 
-.hero_secondary,.info_text,.header_links a {
-  font-size: 18px;
+.hero_secondary,.info_text,.header_links a,.action_text_body {
+  font-size: 16px;
   color: lightgray;
   text-decoration: none;
   /* padding: 8px; */
 }
 
-.button, .action_call{
+.button,.action_box {
   background: #3882F6;
+  border-radius: 8px;
 }
 
 .header {
-  font-size: 24px;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -37,8 +40,20 @@ body {
   padding-bottom: 8px;
 }
 
-.header_links {
+.header_logo {
+  color: #F9FAF8;
+  font-size: 24px;
+}
 
+.header_links {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header_links a {
+  align-self: center;
 }
 
 .hero{
@@ -68,10 +83,9 @@ body {
 }
 
 .button{
-  border-radius: 8px;
+  color: white;
   width: 100px;
-  height: 30px;
-  /* padding: 10px 0px; */
+  padding: 6px 0px;
   text-align: center;
 }
 
@@ -109,6 +123,10 @@ body {
 .info_tile {
   width: 150px;
   gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
 }
 
 .info_box {
@@ -126,22 +144,54 @@ body {
   color: #1F2937;
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: center;
-  padding: 8px;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
-.quote_main {
+.quote_text {
   font-size: 36px;
   font-style: italic;
-  font-weight: light;
+  font-weight: lighter;
+  width: 600px;
+  margin: auto;
 }
 
 .quote_author {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
+  text-align: end;
+  width: 600px;
 }
 
-.action_call {
+.action {
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
+.action_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.action_text { 
+}
+
+.action_text_title {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.action_text_body {
+  margin-top: 0px;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
